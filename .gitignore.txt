@@ -2,4 +2,4 @@
 #This will ignore the AWS command line to load the dataset; 
 #this will restrict from occuring in github
 
-/https://s3.amazonaws.com/dstkh.datasets/PS_20174392719_1491204439457_log.csv
+PS_20174392719_1491204439457_log.csv
