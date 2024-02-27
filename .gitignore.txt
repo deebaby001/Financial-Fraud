@@ -1,5 +1,6 @@
 .gitignore
 #This will ignore the AWS command line to load the dataset; 
-#this will restrict from occuring in github
+#this will restrict from loading into the github repo
 
 PS_20174392719_1491204439457_log.csv
+cleaned_fraud_data.csv
