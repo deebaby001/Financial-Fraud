@@ -79,9 +79,40 @@ The purpose of this is to present the data in the most unencumbered manner possi
 
 #4. EDA
 
-1st: Provide Pre-Processing 
-The EDA Analysis Report will be displayed in the following:
-Attempted to run dataset; it took 15m 58.6 s at time of last run
+1st: Pre-Processing 
+
+The EDA Analysis Report as follows:
+Attempted to run dataset; it took 15m 58.6 s at time of last run. This is intensive CPU usage on a basic laptop.
+
+Description of Dataset Column Information and Type Information
+
+Step: The "Step" is intended to represent a TimeStamp of each financial transactions represented in the dataset
+Type: The "Type" of financial transaction, represented by: TRANSFER, CASH_IN, CASH_OUT, PAYMENT
+Amount: The "Amount" of each financial transaction represented in US Dollars ($)
+nameOrig: The "nameOrig" the Name of the origin financial account
+oldbalanceOrg: The "oldbalanceOrg", represents the old balance of the origin account
+newbalanceOrig: The "newbalanceOrig", represents the new balance of the origin account
+nameDest: The "nameDest", represents the name of the destination account
+oldbalanceDest: The "oldbalanceDest", represents the old balance of the destination account
+newbalanceDest: The "newbalanceDest", represents the new balance of the destination account
+isFraud: The "isFraud", represents that the account has been detected to be fraudulent
+is FlaggedFraud: THe "is FlaggedFraud", represents that the account is selected for possible fraud 
+
+Data Set TYPE Information
+step              0
+type              0
+amount            0
+nameOrig          0
+oldbalanceOrg     0
+newbalanceOrig    0
+nameDest          0
+oldbalanceDest    0
+newbalanceDest    0
+isFraud           0
+isFlaggedFraud    0
+dtype: int64
+
+Description of DataSet
 
 CODE: df.describe
 <bound method NDFrame.describe of          step      type      amount     nameOrig  oldbalanceOrg  \
@@ -125,21 +156,17 @@ CODE: df.describe
 
 [6362620 rows x 11 columns]>
 
+Technique used to Sample the original Dataset
+
 Due to the size of the dataset, I employed the sampling technique using,
 CODE:  sample_df = df.sample(n=1000000)
 which yielded:
 CODE: sample_df.shape
 RESULTING: (1000000, 11) 
 
-
-
 #5. MODELING
 
-(IN PROGRESS)
-
-1st: Provide Pre-Processing Report 
-2nd: Modeling Report
-2nd: Model Data Visualization with Written Analysis
+Final: Model Data Visualization with Written Analysis
 
 #7. FURTHER RESEARCH
 Interesting Facts Discovered: There were 16 rows that were unflagged as "isFlaggedFraud", meaning that there were set as "isFraud"
