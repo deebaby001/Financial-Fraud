@@ -1,0 +1,28 @@
+Description of Dataset Column Information and Type Information
+
+Step: The "Step" is intended to represent a TimeStamp of each financial transactions represented in the dataset
+Type: The "Type" of financial transaction, represented by: TRANSFER, CASH_IN, CASH_OUT, PAYMENT
+Amount: The "Amount" of each financial transaction represented in US Dollars ($)
+nameOrig: The "nameOrig" the Name of the origin financial account
+oldbalanceOrg: The "oldbalanceOrg", represents the old balance of the origin account
+newbalanceOrig: The "newbalanceOrig", represents the new balance of the origin account
+nameDest: The "nameDest", represents the name of the destination account
+oldbalanceDest: The "oldbalanceDest", represents the old balance of the destination account
+newbalanceDest: The "newbalanceDest", represents the new balance of the destination account
+isFraud: The "isFraud", represents that the account has been detected to be fraudulent
+is FlaggedFraud: THe "is FlaggedFraud", represents that the account is selected for possible fraud 
+
+
+Data Set TYPE Information
+step              0
+type              0
+amount            0
+nameOrig          0
+oldbalanceOrg     0
+newbalanceOrig    0
+nameDest          0
+oldbalanceDest    0
+newbalanceDest    0
+isFraud           0
+isFlaggedFraud    0
+dtype: int64

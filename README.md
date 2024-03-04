@@ -162,15 +162,19 @@ Due to the size of the dataset, I employed the sampling technique using,
 CODE:  sample_df = df.sample(n=1000000)
 which yielded:
 CODE: sample_df.shape
-RESULTING: (1000000, 11) 
+RESULTING: (1000000, 9) 
+
+The actual Machine Learning Sample file is: ML_Sample.csv is (10000, 9)
 
 #5. MODELING
 
 Final: Model Data Visualization with Written Analysis
 
-#7. FURTHER RESEARCH
-Interesting Facts Discovered: There were 16 rows that were unflagged as "isFlaggedFraud", meaning that there were set as "isFraud"
-
+#7. Overall Observation:
+I believe that this was an interesting dataset, yet due to the size and limited tools to really massage the data, there were limitations. 
+Additionally, I believe that my observations may have also been limited by attributes such as the following missing or non-existent in the dataset: Date/TimeStamp on all transactions types. Also, if there were a way to denote of previous fraud activity had occurred on various accounts that could have been able to foster some additional observations and areas of evaluation.
+Fact Discovered: There were "16" rows of data that were not flagged as "isFlaggedFraud", instead, they were set as "isFraud".
+That is the reason why I feel that this dataset had previously been redacted.
 
 #8. CREDITS
 Original Project was provided by: (See data from Canvas site per instructor. Ensemble Methods For Financial Fraud Detection)
